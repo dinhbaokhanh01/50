@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #222;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.demo {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.demo h2 {
+    margin-top: 0;
+}
+
+/* ================================
+   1. MENU DROPDOWN DỌC
+   ================================ */
+
+#vertical-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#vertical-menu li {
+    list-style: none;
+    position: relative;
+    width: 140px;
+    height: 40px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#vertical-menu li:hover {
+    background-color: #444;
+}
+
+#vertical-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#vertical-menu li ul {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    visibility: hidden;
+    z-index: 10;
+}
+
+#vertical-menu li:hover > ul {
+    visibility: visible;
+}
+
+/* ================================
+   2. MENU DROPDOWN NGANG
+   ================================ */
+
+#horizontal-menu {
+    height: 50px;
+    border: 1px solid #333;
+    background-color: #222;
+}
+
+#horizontal-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#horizontal-menu .main-menu {
+    display: flex;
+    list-style: none;
+}
+
+#horizontal-menu li {
+    position: relative;
+    list-style: none;
+}
+
+#horizontal-menu a {
+    display: block;
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#horizontal-menu a:hover {
+    background-color: red;
+}
+
+#horizontal-menu li ul {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    visibility: hidden;
+    background-color: #222;
+    z-index: 20;
+}
+
+#horizontal-menu li:hover > ul {
+    visibility: visible;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
